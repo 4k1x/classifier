@@ -18,7 +18,7 @@ import subprocess
 import sys
 
 
-VERSION = 'Classifier 2.0'
+VERSION = 'Classifier 2.1'
 DIRCONFFILE = '.classifier.conf'
 PLATFORM = sys.platform
 OS = os.name
