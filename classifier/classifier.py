@@ -173,7 +173,7 @@ class Classifier:
         print("Scanning Files")
 
         files = [x for x in os.listdir(directory) if not x.startswith('.')]
-        creation_dates = map(lambda x: (x, arrow.get(os.path.getctime(os.path.join(directory, x)))), files)
+        creation_dates = map(lambda x: (x, arrow.get(os.path.getmtime(os.path.join(directory, x)))), files)
         print(creation_dates)
 
         for file, creation_date in creation_dates:
